@@ -141,7 +141,7 @@
 		//echo $serverUsername;
 		
 		//Kasutan funktsiooni
-		signUp($signupEmail, $password);
+		$User->signUp($signupEmail, $password);
 		
 	}
 	
@@ -149,7 +149,7 @@
 	if(isset($_POST["loginEmail"]) && isset ($_POST["loginPassword"]) &&
 		!empty($_POST["loginEmail"]) && !empty($_POST["loginPassword"])
 		){
-			$error=login($_POST["loginEmail"], $_POST["loginPassword"]);
+			$error=$User->login($_POST["loginEmail"], $_POST["loginPassword"]);
 	}
 ?>
 
