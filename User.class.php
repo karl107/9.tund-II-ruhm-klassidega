@@ -30,7 +30,6 @@ class User {
 		}
 	
 		$stmt->close();
-		$this->connection->close();
 		
 		
 		

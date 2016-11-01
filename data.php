@@ -40,7 +40,7 @@
 	
 	
 	//saan kõik auto andmed
-	$carData=getAllCars();
+	$carData=$Car->getAllCars();
 	
 	echo "<pre>";
 	var_dump($carData);
