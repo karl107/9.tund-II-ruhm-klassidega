@@ -22,7 +22,7 @@ class Interest {
  		$stmt->bind_param("s", $interest);
  		
  		if($stmt->execute()) {
- 			echo "salvestamine õnnestus";
+ 			echo "salvestamine Ãµnnestus";
  		} else {
  		 	echo "ERROR ".$stmt->error;
  		}
@@ -110,7 +110,7 @@ class Interest {
 			//oli olemas juba selline rida
 			echo "juba olemas";
 			return;
-			//pärast returni midagi edasi ei tehta funktsioonis
+			//pÃ¤rast returni midagi edasi ei tehta funktsioonis
 			
 		}
 		
@@ -123,7 +123,7 @@ class Interest {
 		$stmt->bind_param("ii", $_SESSION["userId"], $interest);
 		
 		if($stmt->execute()) {
-			echo "salvestamine õnnestus";
+			echo "salvestamine Ãµnnestus";
 		} else {
 			echo "ERROR ".$stmt->error;
 		}

@@ -7,6 +7,7 @@
 	$database="if16_karlkruu";
 	$mysqli=new mysqli($serverHost, $serverUsername, $serverPassword, $database);
 	
+	//klassid
 	require("User.class.php");
 	$User=new User($mysqli);
 	

@@ -13,7 +13,7 @@ class Helper {
 	
 	function cleanInput($input){
 		
-		//Tõkestame sisestusel pahatahtlike käskude rakendumist.
+		//TÃµkestame sisestusel pahatahtlike kÃ¤skude rakendumist.
 		$input=trim($input);
 		$input=htmlspecialchars($input);
 		$input=stripslashes($input);

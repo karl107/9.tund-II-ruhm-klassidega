@@ -32,7 +32,7 @@
 		!empty($_POST["interest"])
 	  ) {
 		  echo $_POST["interest"];
-		saveInterest(cleanInput($_POST["interest"]));
+		$Interest->saveInterest($Helper->cleanInput($_POST["interest"]));
 		
 	}
 	
@@ -40,12 +40,12 @@
 		!empty($_POST["userInterest"])
 	  ) {
 		  
-		saveUserInterest(cleanInput($_POST["userInterest"]));
+		$Interest->saveUserInterest($Helper->cleanInput($_POST["userInterest"]));
 		
 	}
 	
-    $interests = getAllInterests();
-	$userInterests = getUserAllInterests();
+    $interests = $Interest->getAllInterests();
+	$userInterests = $Interest->getUserAllInterests();
 	
 	
 	
